@@ -5,11 +5,11 @@
 const typedEl = document.getElementById("typed");
 
 const words = [
-    "Software Developer",
-    "DevOps Engineer",
-    "Cloud Enthusiast",
-    "Robotics Simulation",
-    "Full Stack Developer"
+    "DevOps & Cloud Enthusiast",
+    "Java Developer",
+    "Python Developer",
+    "Cloud & Automation",
+    "Passionate Coder"
 ];
 
 let wordIndex = 0;
