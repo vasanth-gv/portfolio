@@ -1,0 +1,132 @@
+/* ============================================
+   ANIMATIONS - Keyframes & Animation Classes
+   ============================================ */
+
+/* ===== KEYFRAMES ===== */
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-30px); }
+}
+
+@keyframes pulse {
+    0%, 100% { box-shadow: 0 0 60px var(--glow); }
+    50% { box-shadow: 0 0 100px var(--glow), 0 0 150px rgba(255, 101, 132, 0.15); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(8px); }
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes rotateIcon {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* ===== HERO BACKGROUND CIRCLES ===== */
+.circle1 {
+    animation: float 8s ease-in-out infinite;
+}
+
+.circle2 {
+    animation: float 6s ease-in-out infinite reverse;
+}
+
+.circle3 {
+    animation: float 10s ease-in-out infinite;
+}
+
+/* ===== HERO CONTENT ENTRANCE ===== */
+.hero-greeting {
+    animation: fadeInUp 0.6s ease both;
+}
+
+.hero-name {
+    animation: fadeInUp 0.8s ease both;
+}
+
+.hero-title {
+    animation: fadeInUp 1s ease both;
+}
+
+.hero-desc {
+    animation: fadeInUp 1.2s ease both;
+}
+
+.hero-buttons {
+    animation: fadeInUp 1.4s ease both;
+}
+
+.hero-socials {
+    animation: fadeInUp 1.6s ease both;
+}
+
+.hero-image {
+    animation: fadeInRight 1s ease both;
+}
+
+/* ===== PROFILE CIRCLE PULSE ===== */
+.profile-circle {
+    animation: pulse 3s ease-in-out infinite;
+}
+
+/* ===== TYPING CURSOR BLINK ===== */
+.cursor {
+    animation: blink 1s infinite;
+}
+
+/* ===== SCROLL DOWN BOUNCE ===== */
+.scroll-down {
+    animation: bounce 2s infinite;
+}
+
+/* ===== ABOUT BADGES FLOAT ===== */
+.about-badge {
+    animation: float 4s ease-in-out infinite;
+}
+
+.badge1 { animation-delay: 0s; }
+.badge2 { animation-delay: 1s; }
+.badge3 { animation-delay: 2s; }
+
+/* ===== THEME TOGGLE SPIN ON CLICK ===== */
+.theme-toggle:active i {
+    animation: rotateIcon 0.5s ease;
+}
+
+/* ===== SCROLL REVEAL (used by JS) ===== */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== TIMELINE ENTRANCE ===== */
+.timeline-item {
+    animation: fadeInLeft 0.6s ease both;
+}
